@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>USB Flash Project</title>
+</head>
+<body>
+    <h1>Управление USB флешками</h1>
+    <div>
+        <h2>Добавить новую флешку</h2>
+        <input type="text" id="manufacturer" placeholder="Производитель" required>
+        <input type="number" id="capacity" placeholder="Объем памяти (ГБ)" required>
+        <input type="number" id="warranty" placeholder="Срок гарантии (лет)" required>
+        <input type="number" id="quantity" placeholder="Количество на складе" required>
+        <button id="addFlash">Добавить</button>
+    </div>
+    <div>
+        <h2>Поиск производителей с гарантией меньше</h2>
+        <input type="number" id="warrantySearch" placeholder="Срок гарантии" required>
+        <button id="searchManufacturers">Найти</button>
+        <ul id="manufacturersList"></ul>
+    </div>
+    <div>
+        <h2>Удалить флешки с гарантией меньше</h2>
+        <input type="number" id="warrantyDelete" placeholder="Срок гарантии" required>
+        <button id="deleteFlashes">Удалить</button>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
